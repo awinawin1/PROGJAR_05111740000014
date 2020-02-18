@@ -14,7 +14,7 @@ while True:
     connection, client_address = sock.accept()
     print(f"connection from {client_address}")
     # Receive the data in small chunks and retransmit it
-    fl = open("file.txt", 'rb')
+    fl = open("file.txt", 'r')
     isi = fl.read(64)
     message = str(isi)
     # print(f"received {data}")
