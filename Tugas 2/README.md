@@ -1,1 +1,1 @@
-![alt text](Gambar/bart.png)
+![alt text](Gambar/hasil.png)
