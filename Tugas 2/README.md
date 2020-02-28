@@ -1,4 +1,5 @@
-Tugas 2
+## Tugas 2
+
 Menjalankan program dengan 
 pc saya -> 10.151.254.214
 pc lain -> 10.151.253.224
