@@ -1,7 +1,7 @@
 import socket
 import os
 TARGET_IP = "10.151.253.224"
-TARGET_PORT = 5005
+TARGET_PORT = 5006
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 namafile="bart.png"
 ukuran = os.stat(namafile).st_size
