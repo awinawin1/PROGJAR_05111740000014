@@ -1,4 +1,10 @@
 ## Tugas 1
+Server dijalankan di port yang berbeda, dan masing masing  client ke server tersebut
+kondisi awal server 31000, 31001, 31002
+![alt text](Gambar/a300.png)
+![alt text](Gambar/a301.png)
+![alt text](Gambar/a302.png)
+
 ## 1a. memodifikasi program client.py dan server.py agar dapat mentransfer file dari client ke server
 1. membuat file.txt yang berisikan pesan yang akan dikirim
 
