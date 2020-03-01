@@ -5,6 +5,18 @@ kondisi awal server 31000, 31001, 31002
 ![alt text](Gambar/a301.jpg)
 ![alt text](Gambar/a302.jpg)
 
+Client mengirim pesan ke server port 31000
+![alt text](Gambar/aw301.jpg)
+![alt text](Gambar/b301.jpg)
+
+Client mengirim pesan ke server port 31001
+![alt text](Gambar/aw301.jpg)
+![alt text](Gambar/b301.jpg)
+
+Client mengirim pesan ke server port 31002
+![alt text](Gambar/aw301.jpg)
+![alt text](Gambar/b301.jpg)
+
 ## 1a. memodifikasi program client.py dan server.py agar dapat mentransfer file dari client ke server
 1. membuat file.txt yang berisikan pesan yang akan dikirim
 
