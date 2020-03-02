@@ -1,6 +1,6 @@
 import socket
 import os
-TARGET_IP = "10.151.253.224"
+TARGET_IP = '127.0.0.1'
 TARGET_PORT = 5006
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 namafile="bart.png"
