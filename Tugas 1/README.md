@@ -1,21 +1,21 @@
 ## Tugas 1
 Server dijalankan di port yang berbeda, dan masing masing  client ke server tersebut
 kondisi awal server 31000, 31001, 31002
-![alt text](Gambar/a300.jpg)
-![alt text](Gambar/a301.jpg)
-![alt text](Gambar/a302.jpg)
+![alt text](Gambar/s30.png)
+![alt text](Gambar/t31.png)
+![alt text](Gambar/u32.png)
 
 Client mengirim pesan ke server port 31000
-![alt text](Gambar/aw301.jpg)
-![alt text](Gambar/b301.jpg)
+![alt text](Gambar/s230.png)
+![alt text](Gambar/s330.png)
 
 Client mengirim pesan ke server port 31001
-![alt text](Gambar/aw301.jpg)
-![alt text](Gambar/b301.jpg)
+![alt text](Gambar/t231.png)
+![alt text](Gambar/t331.png)
 
 Client mengirim pesan ke server port 31002
-![alt text](Gambar/aw301.jpg)
-![alt text](Gambar/b301.jpg)
+![alt text](Gambar/u232.png)
+![alt text](Gambar/u332.png)
 
 ## 1a. memodifikasi program client.py dan server.py agar dapat mentransfer file dari client ke server
 1. membuat file.txt yang berisikan pesan yang akan dikirim
