@@ -31,7 +31,7 @@ if __name__=='__main__':
 
     threads = []
 
-    t = threading.Thread(target=download_gambar, args=('https://asset.kompas.com/crops/qz_jJxyaZgGgboomdCEXsfbSpec=/0x0:998x665/740x500/data/photo/2020/03/01/5e5b52f4db896.jpg','1',))
+    t = threading.Thread(target=download_gambar, args=('https://asset.kompas.com/crops/z0dszHm0jds6LudgG2Ghkc5f5ro=/0x0:999x666/750x500/data/photo/2020/03/04/5e5f3232e3f5f.jpg','1',))
     threads.append(t)
     t = threading.Thread(target=download_gambar, args=('https://asset.kompas.com/crops/Bs1bR-MAnGIUgy_iM1VQy1CMuD8=/3x0:988x657/750x500/data/photo/2018/09/21/1515242984.jpg','2',))
     threads.append(t)
