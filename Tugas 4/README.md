@@ -1,5 +1,5 @@
 # TUGAS4
-1. Client untuk oprasi meletakkan file(upload)
+## 1. Client untuk oprasi meletakkan file(upload)
 
 -Menjalankan server
 ![alt text](Gambar/server.png)
@@ -20,7 +20,7 @@ Terdapat cotton_PNG20.png di dalam direktori Hasil
 
 ![alt text](Gambar/list_setelah_upload.png)
 
-2. Client untuk operasi mengambil file(download)
+## 2. Client untuk operasi mengambil file(download)
 
 -Menjalankan server
 ![alt text](Gambar/server.png)
@@ -41,7 +41,7 @@ Akan terdapat file Tugas3_05111740000014_awin.pdf yang terdapat diluar dari dire
 
 ![alt text](Gambar/list_setelah_download.png)
 
-3. Client untuk operasi melihat list file
+## 3. Client untuk operasi melihat list file
 
 -Menjalankan server
 ![alt text](Gambar/server.png)
