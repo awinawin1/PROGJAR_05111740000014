@@ -115,7 +115,7 @@ if __name__ == "__main__":
 
 #   print(j.users)
     print(j.get_listuser())
-#   user = {'listuser':list(j.users.keys())}
+#   user = {'listusers':list(j.users.keys())}
 #   print(user)
 #   print(j.users)
 #   sesi = j.proses("auth messi surabaya")
