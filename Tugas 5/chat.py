@@ -41,10 +41,10 @@ class Chat:
                 username = self.sessions[sessionid]['username']
                 logging.warning("INBOX: {}".format(sessionid))
                 return self.get_inbox(username)
-            elif (command == 'listusers'):
+            elif (command == 'listuser'):
                 sessionid = j[1].strip()
 
-                return self.get_listusers()
+                return self.get_listuser()
             else:
                 return {'status': 'ERROR', 'message': '**Protocol Tidak Benar'}
         except KeyError:
@@ -101,10 +101,10 @@ class Chat:
 
         return {'status': 'OK', 'messages': msgs}
 
-    def get_listusers(self):
-        listuders = {'listusers' :{}}
+    def get_listuser(self):
+        listuder = {'listuser' :{}}
 
-        return{'status': 'OK','listusers': list(self.users.keys())}
+        return{'status': 'OK','listuser': list(self.users.keys())}
 
 
 if __name__ == "__main__":
@@ -114,8 +114,8 @@ if __name__ == "__main__":
     #yg di coba listusersnya aja.
 
 #   print(j.users)
-    print(j.get_listusers())
-#   user = {'listusers':list(j.users.keys())}
+    print(j.get_listuser())
+#   user = {'listuser':list(j.users.keys())}
 #   print(user)
 #   print(j.users)
 #   sesi = j.proses("auth messi surabaya")
