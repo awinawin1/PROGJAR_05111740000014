@@ -28,8 +28,8 @@ class ChatClient:
                 return self.sendmessage(usernameto,message)
             elif (command=='inbox'):
                 return self.inbox()
-            elif (command=='listusers'):
-                return self.listusers()
+            elif (command=='listuser'):
+                return self.listuser()
 
             else:
                 return "*Maaf, command tidak benar"
@@ -41,11 +41,11 @@ class ChatClient:
             receivemsg = ""
             while True:
                 data = self.sock.recv(64)
-                print("diterima dari server",data)
+                #print("diterima dari server",data)
                 if (data):
                     receivemsg = "{}{}" . format(receivemsg,data.decode())  #data harus didecode agar dapat di operasikan dalam bentuk string
                     if receivemsg[-4:]=='\r\n\r\n':
-                        print("end of string")
+                        #print("end of string")
                         return json.loads(receivemsg)
         except:
             self.sock.close()
@@ -77,13 +77,13 @@ class ChatClient:
             return "{}" . format(json.dumps(result['messages']))
         else:
             return "Error, {}" . format(result['message'])
-    def listusers(self):
-        if(self.tokenid == ""):
+    def listuser(self):
+        if (self.tokenid == ""):
             return "Error, not authorized"
-        string="listusers {} \r\n".format(self.tokenid)
+        string = "listuser {} \r\n".format(self.tokenid)
         result = self.sendstring(string)
-        if result['ststus'] == 'OK':
-            return "{}".format(json.dumps(result['listusers']))
+        if result['status'] == 'OK':
+            return "{}".format(json.dumps(result['listuser']))
         else:
             return "Error, {}".format(result['message'])
 
