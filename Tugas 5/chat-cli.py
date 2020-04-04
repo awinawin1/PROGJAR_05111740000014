@@ -30,9 +30,16 @@ class ChatClient:
                 return self.inbox()
             elif (command=='listuser'):
                 return self.listuser()
+            elif (command=="logout"):
+                if(self.tokenid ==""):
+                    return "ERROR,Anda belum login"
+                return self.logout()
 
             else:
                 return "*Maaf, command tidak benar"
+        except IndexError:
+            return "-Maaf, command tidak benar"
+
         except IndexError:
                 return "-Maaf, command tidak benar"
     def sendstring(self,string):
@@ -41,11 +48,11 @@ class ChatClient:
             receivemsg = ""
             while True:
                 data = self.sock.recv(64)
-                #print("diterima dari server",data)
+             #  print("diterima dari server",data)
                 if (data):
                     receivemsg = "{}{}" . format(receivemsg,data.decode())  #data harus didecode agar dapat di operasikan dalam bentuk string
                     if receivemsg[-4:]=='\r\n\r\n':
-                        #print("end of string")
+                      # print("end of string")
                         return json.loads(receivemsg)
         except:
             self.sock.close()
@@ -77,16 +84,29 @@ class ChatClient:
             return "{}" . format(json.dumps(result['messages']))
         else:
             return "Error, {}" . format(result['message'])
+
     def listuser(self):
         if (self.tokenid == ""):
             return "Error, not authorized"
         string = "listuser {} \r\n".format(self.tokenid)
         result = self.sendstring(string)
         if result['status'] == 'OK':
-            return "{}".format(json.dumps(result['listuser']))
+            print("User yang sedang aktif: ")
+            return "{}".format(json.dumps(result['listuseraktif']))
         else:
             return "Error, {}".format(result['message'])
 
+    def logout(self):
+        if (self.tokenid == ""):
+            return "Error, not authorized"
+        string='logout {} \r\n' . format(self.tokenid)
+        print(string)
+        result = self.sendstring(string)
+        if result['status']=='OK':
+            self.tokenid=""
+            return "{}" . format(json.dumps(result['messages']))
+        else:
+            return "Error, {}" . format(result['message'])
 
 if __name__=="__main__":
     cc = ChatClient()
