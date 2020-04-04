@@ -43,8 +43,13 @@ class Chat:
                 return self.get_inbox(username)
             elif (command == 'listuser'):
                 sessionid = j[1].strip()
-
                 return self.get_listuser()
+
+            elif (command == 'logout'):
+                sessionid = j[1].strip()
+
+                return self.logout_user(sessionid)
+
             else:
                 return {'status': 'ERROR', 'message': '**Protocol Tidak Benar'}
         except KeyError:
@@ -101,10 +106,23 @@ class Chat:
 
         return {'status': 'OK', 'messages': msgs}
 
-    def get_listuser(self):
-        listuder = {'listuser' :{}}
 
-        return{'status': 'OK','listuser': list(self.users.keys())}
+    def get_listuser(self):
+        tokenid = list(self.sessions.keys())
+        #	print(tokenid[1])
+        listuser = ""
+        for x in tokenid:
+            # print(self.sessions[x]['username'])
+            listuser = listuser + self.sessions[x]['username'] + ' '
+
+        print(listuser)
+        # print(self.sessions[tokenid[1]]['username'])
+
+        return {'status': 'OK', 'listuseraktif': listuser}
+
+    def logout_user(self, sessionid):
+        del self.sessions[sessionid]
+        return {'status': 'OK', 'messages': 'logout berhasil'}
 
 
 if __name__ == "__main__":
