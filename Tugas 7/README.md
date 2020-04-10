@@ -1,4 +1,5 @@
 ## Tugas 7
+Laporan di Tugas7_Risky Aswi Narni_05111740000014.pdf
 
 Performance test sederhana, hanya bisa dilakukan di linux/unix based
 
