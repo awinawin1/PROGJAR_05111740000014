@@ -34,12 +34,13 @@ class HttpServer:
 
     def proses(self, data):
         requests = data.split("\r\n")
-        # print(requests)
+        
         baris = requests[0]
-        # print(baris)
+        
         all_headers = [n for n in requests[1:] if n != '']
         j = baris.split(" ")
         try:
+            
             method = j[0].upper().strip()
             if (method == 'GET'):
                 object_address = j[1].strip()
@@ -73,9 +74,9 @@ class HttpServer:
 
         calon = headers
         headers = {}
-        i = "\n"
+        x = "\n"
         for atribut in calon:
-            i = i + atribut + "\n"
+            x = x + atribut + "\n"
 
-        isi = isiform + i
+        isi = isiform + x
         return self.response(200, 'OK', isi, headers)
