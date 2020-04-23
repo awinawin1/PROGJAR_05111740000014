@@ -3,7 +3,7 @@
 
 - Buka browser(chrome) arahkan ke http://127.0.0.1:10002/sending.html
 ![alt text](Gambar/6.png)
-- Buka browser(chrome) arahkan ke http://127.0.0.1:10002/sending.html
+- Output
 ![alt text](Gambar/5.png)
 
 2. Setekah Dimodifikasi
