@@ -1,10 +1,10 @@
 # Tugas 10
 
 Jalankan async_server.py pada port 9002, 9003, 9004, 9005 (lihat pada BackendList)
-![alt text](Gambar/5.png)
+![alt text](Gambar/2.png)
 
 Jalankan file lb.py, jalankan di port 44444
-![alt text](Gambar/2.png)
+![alt text](Gambar/5.png)
 
 Jalankan browser, akseslah http://localhost:44444/page.html
 ![alt text](Gambar/1.png)
