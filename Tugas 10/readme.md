@@ -1,5 +1,7 @@
 # Tugas 10
 
+Lapran di file Tugas10_Risky Aswi Narni_05111740000014.pdf
+
 Jalankan async_server.py pada port 9002, 9003, 9004, 9005 (lihat pada BackendList)
 ![alt text](Gambar/3.png)
 
@@ -23,4 +25,7 @@ Lakukan performance test
 ![alt text](Gambar/m100.png)
 - ab -n 1000 -c 150 -r http://127.0.0.1:44444/
 ![alt text](Gambar/m150.png)
+
+ Tabel pembanding dengan async_server dengan server_thread_http
+ 
 
