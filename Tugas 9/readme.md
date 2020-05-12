@@ -13,7 +13,7 @@ ab -n 1000 -c 10 -r http://127.0.0.1:45000/
 
 ab -n 1000 -c 50 -r http://127.0.0.1:45000/
 
-![alt text](Gambar/100.png)
+![alt text](Gambar/50.png)
 
 ab -n 1000 -c 100 -r http://127.0.0.1:45000/
 
@@ -21,4 +21,4 @@ ab -n 1000 -c 100 -r http://127.0.0.1:45000/
 
 ab -n 1000 -c 150 -r http://127.0.0.1:45000/
 
-![alt text](Gambar/1000.png)
+![alt text](Gambar/150.png)
