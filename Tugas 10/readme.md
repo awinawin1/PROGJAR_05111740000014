@@ -14,7 +14,11 @@ Jalankan browser, akseslah http://localhost:44444/page.html
 Lihatlah di log program, bahwa setiap request akan dilayani oleh backend yang bergantian
 ![alt text](Gambar/2.png)
 
-Lakukan performance test
+Tabel pembanding dengan async_server dengan server_thread_http dengan Asyncronus Server Dengan Load Balance
+![alt text](Gambar/tabel.png)
+ 
+
+Hasil SS performance test Asyncronus Server Dengan Load Balance
 - ab -n 1000 -c 1 -r http://127.0.0.1:44444/
 ![alt text](Gambar/m1.png)
 - ab -n 1000 -c 10 -r http://127.0.0.1:44444/
@@ -26,6 +30,5 @@ Lakukan performance test
 - ab -n 1000 -c 150 -r http://127.0.0.1:44444/
 ![alt text](Gambar/m150.png)
 
- Tabel pembanding dengan async_server dengan server_thread_http
- 
+
 
